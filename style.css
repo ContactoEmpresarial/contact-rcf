@@ -1,82 +1,18 @@
-* { box-sizing: border-box; }
-:root {
-  --unicre-blue: #063b72;
-  --deep-blue: #052c55;
-  --text: #18324b;
-  --muted: #718096;
-}
-html, body { min-height: 100%; }
-body {
-  margin: 0;
-  padding: 34px 16px;
-  background: #f2f5f8;
-  color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
-}
-.page { width: 100%; max-width: 430px; margin: 0 auto; }
-.card {
-  overflow: hidden;
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 14px 45px rgba(13, 43, 72, .12);
-}
-.cover {
-  position: relative;
-  min-height: 176px;
-  padding: 28px 28px;
-  color: white;
-  background: linear-gradient(120deg, #062e59 0%, #07539a 58%, #1686bb 100%);
-}
-.cover::after {
-  content: "";
-  position: absolute;
-  width: 260px; height: 260px;
-  right: -95px; top: -130px;
-  border: 1px solid rgba(255,255,255,.2);
-  border-radius: 50%;
-  box-shadow: 0 0 0 28px rgba(255,255,255,.035), 0 0 0 58px rgba(255,255,255,.025);
-}
-.brand { position: relative; z-index: 1; font-size: 19px; font-weight: 700; letter-spacing: 2px; }
-.cover-line { position: relative; z-index: 1; margin-top: 42px; font-size: 17px; font-weight: 300; letter-spacing: .4px; }
-.qr {
-  position: absolute; z-index: 2; top: 18px; right: 18px;
-  width: 68px; height: 68px; padding: 4px;
-  background: #fff; border-radius: 7px;
-}
-.qr img { display: block; width: 100%; height: 100%; }
-.profile { padding: 0 28px 30px; text-align: center; }
-.portrait {
-  position: relative; width: 112px; height: 112px; margin: -52px auto 17px;
-  overflow: hidden; border: 5px solid #fff; border-radius: 50%;
-  background: #e7eef5; box-shadow: 0 3px 14px rgba(0,0,0,.12);
-}
-.portrait img { width: 100%; height: 100%; object-fit: cover; }
-.initials {
-  display: none; place-items: center; width: 100%; height: 100%;
-  color: var(--unicre-blue); font-size: 27px; font-weight: 700;
-}
-h1 { margin: 0; color: #15334f; font-size: 25px; font-weight: 700; }
-.role { margin: 8px 0 0; color: #536b80; font-size: 15px; }
-.company { margin: 6px 0 0; color: var(--unicre-blue); font-size: 14px; font-weight: 700; letter-spacing: 1px; }
-.contact-links {
-  display: flex; flex-direction: column; gap: 13px;
-  margin: 27px 0 25px; font-size: 14px;
-}
-.contact-links a { color: #315b7e; text-decoration: none; overflow-wrap: anywhere; }
-.contact-links a:hover { text-decoration: underline; }
-.save-button {
-  display: flex; align-items: center; justify-content: center; gap: 9px;
-  min-height: 49px; padding: 12px 18px; border-radius: 7px;
-  background: var(--unicre-blue); color: #fff; font-size: 15px;
-  font-weight: 700; text-decoration: none; transition: background .15s ease;
-}
-.save-button:hover { background: var(--deep-blue); }
-.save-button span { font-size: 20px; font-weight: 400; }
-footer { padding: 16px; border-top: 1px solid #edf1f5; color: #65798b; text-align: center; font-size: 11px; letter-spacing: .7px; }
-footer span { padding: 0 4px; }
-.hint { margin: 16px 0 0; color: #8a98a6; text-align: center; font-size: 12px; }
-@media (max-width: 420px) {
-  body { padding: 14px 10px; }
-  .cover { min-height: 158px; }
-  .profile { padding-right: 22px; padding-left: 22px; }
-}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:linear-gradient(160deg,#0b2545 0%,#13315c 100%);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px 16px;color:#1b1b1b}
+.card{background:#fff;width:100%;max-width:400px;border-radius:20px;padding:36px 28px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.photo{width:128px;height:128px;border-radius:50%;object-fit:cover;border:4px solid #e8eef6;margin-bottom:16px}
+h1{font-size:1.6rem;color:#0b2545}
+.role{margin-top:6px;font-weight:600;color:#13315c}
+.company{margin-top:2px;color:#6b7280;letter-spacing:.08em;font-size:.9rem}
+.btn{display:block;margin:24px 0 20px;padding:14px;border-radius:12px;text-decoration:none;font-weight:600}
+.primary{background:#0b2545;color:#fff}
+.primary:hover{background:#13315c}
+.links{list-style:none;text-align:left}
+.links li+li{border-top:1px solid #eef1f5}
+.links a{display:flex;flex-direction:column;padding:12px 4px;text-decoration:none;color:#1b1b1b;word-break:break-word}
+.links span{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:#6b7280;margin-bottom:2px}
+.links a:hover{color:#13315c}
+.qr{margin-top:24px}
+.qr img{width:180px;height:180px;display:block;margin:0 auto}
+.qr p{margin-top:8px;font-size:.85rem;color:#6b7280}
